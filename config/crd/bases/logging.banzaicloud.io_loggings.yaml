@@ -3161,6 +3161,11 @@ spec:
                   port:
                     format: int32
                     type: integer
+                  readinessDefaultCheck:
+                    type: boolean
+                  readinessDefaultThreshold:
+                    format: int32
+                    type: integer
                   readinessProbe:
                     properties:
                       exec:
@@ -11114,6 +11119,11 @@ spec:
                   podPriorityClassName:
                     type: string
                   port:
+                    format: int32
+                    type: integer
+                  readinessDefaultCheck:
+                    type: boolean
+                  readinessDefaultThreshold:
                     format: int32
                     type: integer
                   readinessProbe:
