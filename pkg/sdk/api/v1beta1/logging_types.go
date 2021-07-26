@@ -292,6 +292,7 @@ func (l *Logging) SetDefaults() error {
 				}
 			}
 		}
+
 	}
 	if l.Spec.FluentbitSpec != nil { // nolint:nestif
 		if l.Spec.FluentbitSpec.PosisionDBLegacy != nil {
@@ -457,6 +458,7 @@ func (l *Logging) SetDefaults() error {
 			l.Spec.FluentbitSpec.TLS.Enabled = util.BoolPointer(false)
 		}
 	}
+
 	return nil
 }
 
